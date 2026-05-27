@@ -85,3 +85,10 @@ main{
     padding: 0;
     
 }
+.shadow{
+    box-shadow: 0 0 10px 1px gray;
+}
+.container{
+    width: fit-content;
+    margin: auto;
+}
