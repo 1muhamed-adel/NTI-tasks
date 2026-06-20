@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    wdith: 90%;
+    padding: 10%;
+    margin: auto;
+  
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+     gap: 20px;
+     justify-content: center;
+}
+.justify-item{  
+    margin-top: 7rem;
+}
+
+.card{
+    width: 30%;
+    height: 150px;
+    position: relative;
+    padding: 1%;
+    background-color: rgb(203, 225, 233);
+    border-radius: 5px;
+    transition: 1s;
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+.padding{
+    padding:1%
+}
+.margin-right{
+    margin-left: 95%;
+}
+
+.card:first-child:hover .bg-color{
+  width: 100%;
+  height: 100%;
+  right: 0;
+  border-radius: 0;
+  opacity: .4;
+  
+}
+
+
+.card:nth-child(2):hover{
+    box-shadow: 0 0 6px 5px lightgrey;
+    background-color: white;
+  
+    
+  
+}
+.container:has(.card:nth-child(3):hover) .card{
+    opacity: .4;
+}
+
+.container:has(.card:nth-child(3):hover) .card:nth-child(3){
+    opacity: 1;
+}
+p{
+    transition: 1s;
+}
+.card:nth-child(3):hover p{
+    color:#00c3ff; 
+    
+    
+    
+
+}
+.card:nth-child(3):hover{
+    box-shadow: 0 0 5px 2px #00c3ff;
+}
+.card:last-child{
+    background-color: white;
+    border: 2px lightgray solid;
+}
+.card:last-child:hover{
+    border-color: rgb(226, 43, 223);
+}
+.card:last-child:hover div{
+    transform: skewX(10deg) translateX(-13px);
+
+}
+.card:last-child div{
+    background-color: rgb(226, 43, 223);
+    width: 25px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    transition: 1s;
+
+}
+
+.bg-color{
+    position: absolute;
+    background-color: #00c3ff;
+    border-radius: 20px;
+    right:-10px;
+    top: 0;
+    width:35px;
+    height:40px;
+    
+    transition: 1s;
+
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+i{
+    position: absolute;
+    right: 0;
+}

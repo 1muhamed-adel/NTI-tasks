@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    padding: 1%;
+}
+.bg-image{
+    position: relative;
+    background-image: url("images/—Pngtree—black\ winding\ road\ road\ city_5546467.png");
+    width: 100%;
+    background-size: cover;      
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    height: 400px;
+}
+img{
+    position: absolute;
+    width : 20%;
+    transform: rotatey(180deg);
+    animation-name: translate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s ;
+    animation-timing-function: linear;
+    /* animation-fill-mode: backwards; */
+    /* animation-direction: reverse; */
+    
+}
+
+img:hover{
+    animation-play-state: paused;
+}
+@keyframes translate {
+    0% {
+        left:-5px;
+        
+    /* transform: translate(0rem,0); */
+    }
+    100%{
+        left:100%;
+        /* transform: translate(180rem,0); */
+    }
+   
+}
