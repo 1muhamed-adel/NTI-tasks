@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+.hero{
+    background-image: url(image\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 75rem;
+    
+}
+a{
+    text-decoration: none !important;
+    color: aliceblue !important;
+}
+
+
+.navbar{
+    height: 100px;
+}
+.nav-item a{
+    color: white;
+}
+.title-box h1 {
+  font-size: clamp(2rem, 7vw, 10rem);
+  font-weight: bold;
+}
+.text-size{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.icon-div{
+    width: 6%;
+    height: 50px;
+}
+.div-hover{
+    transition: .5s;
+}
+.div-hover:hover{
+    background-color: rgb(62, 153, 109) ;
+    
+}
+.div-hover:hover .card-title{
+    color: aliceblue !important ;
+}
+.div-hover:hover span{
+    color: aliceblue !important;
+}
+.div-hover:hover p{
+    color: aliceblue !important;
+}
+
+.fa-location-crosshairs {
+  transition: color 0.3s ease;
+}
+
+.div-hover:hover .fa-location-crosshairs {
+  color: white !important;
+}
+.div-hover:hover .accordion-button{
+    background-color: rgb(62, 153, 109) !important;
+    color: aliceblue !important;
+}
+.div-hover:hover .accordion-body{
+    color: aliceblue !important;
+}
+.list-group-item{
+    border-bottom: 2px solid green !important;
+    transition: .3s;
+}
+.card{
+    transition: .3s;
+}
+.upper-card{
+    transition: .3s;
+}
+
+.card-hover:hover {
+    background-color: rgb(62, 153, 109) !important;
+
+}
+.card-hover:hover p{
+color: aliceblue !important;
+
+}
+.card-hover:hover h2{
+color: aliceblue !important;
+
+}
+.card-hover:hover .upper-card{
+    background-color: aliceblue !important;
+   
+}
+.card-hover:hover #left-p{
+       color: rgb(62, 153, 109) !important ;
+
+}
+
+.card-hover:hover #right-p{
+   color: white !important;
+    background-color: rgb(62, 153, 109)  !important;
+}
+
+
+.card-hover:hover .list-group-item{
+    background-color: rgb(62, 153, 109) !important;
+    border-bottom: 2px solid white !important;
+    color: aliceblue !important;
+}
+.card-hover:hover .list-group-item .border-success{
+   border-color: aliceblue !important;
+}
+.card-hover:hover .btn{
+    background-color: aliceblue;
+    color: green;
+}
+
