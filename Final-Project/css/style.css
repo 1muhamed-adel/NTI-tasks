@@ -95,14 +95,63 @@ img{
     transform: scale(1.1);
 }
 .translate-right{
-    transition: .3s;
+    transition: .5s;
     border-color: black !important;
 }
 .li-item:hover .translate-right{
-    left: 0 !important;
+    left: 10px !important;
 }
 .li-item > .active{
     border-bottom:1px solid black !important ;
+}
+.li-item a{
+    font-size: 85% !important;
+    font-weight:500;
+    margin-left: 13px;
+}
+
+.carousel-indicators button{
+    width:20% !important;
+    height: 40% !important;
+    border: 2px solid black !important;
+    border-radius: 5px;
+    
+}
+
+.animation{
+    animation-name: scale;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    
+}
+.blog-div:hover img{
+    transform: scale(1.1) skewY(2deg);
+   
+}
+.custom-placeholder::placeholder {
+    color: lightgray;    
+
+}
+.footer-link:hover  .translate-right{
+    left: 0px !important;
+}
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+       transform: scale(1.1);
+    }
+    50%{
+       transform: scale(1.2);
+    }
+    75%{
+      transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 
@@ -133,6 +182,10 @@ img{
        
 
     }
+     .li-item a{
+    font-size: 100% !important;
+    font-weight:normal;
+}
     
     
     .navbar-brand{
@@ -216,6 +269,74 @@ img{
     .w-lg:first-child{
         margin-right: 10px !important;
     }
+    .li-item a{
+    font-size: 100% !important;
+    font-weight:normal;
+}
+
+.arrival-height{
+    height: 440px;
+}
+.arrivals-card:hover{
+    box-shadow: 0 0 2px 2px lightgray;
+        overflow: visible !important;
+      
+    /* height: 300px; */
+
+}
+
+.arrivals-card:hover .position{
+    z-index: 2 !important; 
+    bottom: -60px;
+   
+}
+.arrivals-card {
+ transition: .3s;
+ height: 220px;
+ /* border: 1px solid lightgray; */
+ position: relative;
+ 
+}
+.position{
+    position: absolute;
+    left: 0;
+    height: 70px;
+    border: 0;
+    box-shadow: 0px 7px 5px -2px lightgray;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    bottom: -50%;
+}
+.w-lg-50 .carousel-item{
+    width: 45% !important;
+    margin-left:7% ;
+  
+}
+.w-lg-50 .card{
+    align-self: center !important;
+    margin-right: 15% !important;
+    width: 30rem !important;
+    padding: 50px !important;
+}
+.w-lg-50 .carousel-inner{
+    height: 85% !important;
+    justify-content: space-around !important;
+}
+.hoodie-p{
+    top: 24% !important;
+    left:7% !important;
+    font-size: 15rem !important;
+    opacity: .1 !important;
+    /* left :100% !important; */
+}
+.animation{
+    left: 35% !important;
+    top: 25% !important;
+    width: 90px !important;
+    height: 90px !important;
+    font-size: 30px !important;
+}
    
 }
 
