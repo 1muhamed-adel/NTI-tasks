@@ -11,13 +11,16 @@ a{
 a:hover{
     color: red !important;
 }
+label:hover{
+    color: red !important;
+}
 li{
     list-style: none;
 }
 /* .btn:hover{
     border-color: brown !important;
 } */
-.offcanvas{
+.offcanvas,.offcanvas-lg{
     max-width: 89% !important;
 }
 .carousel-indicators button{
@@ -136,6 +139,23 @@ img{
 .footer-link:hover  .translate-right{
     left: 0px !important;
 }
+.btn-white-border:hover{
+    background-color: white !important;
+    border: 1px solid black;
+}
+ label{
+    cursor: pointer;
+ }
+ input[type="checkbox"]:checked{
+  accent-color: black !important;
+}
+.page-item:hover a{
+    border-color: black !important;
+}
+.whitespace-nowrap a{
+    white-space:nowrap !important;
+    overflow: hidden;
+}
 @keyframes scale {
     0%{
         transform: scale(1);
@@ -168,6 +188,13 @@ img{
     .carousel-item img{
     height: 60vh;
     }
+    .w-md-75{
+        width: 75% !important;
+    }
+    .bg-md-white{
+        background-color: white !important;
+        padding: 0 !important;
+    }
 }
 @media only screen and (min-width:  992px) {
     .navbar{
@@ -189,12 +216,12 @@ img{
     
     
     .navbar-brand{
-        margin-left: 100px;
+        margin-left: 80px;
        
     }
     .navbar-nav{
     align-items: baseline !important;
-        margin-left: 100px;
+        margin-left: 80px;
         padding: 0 !important;
     }
     .offcanvas-body{
@@ -337,6 +364,6 @@ img{
     height: 90px !important;
     font-size: 30px !important;
 }
-   
+ 
 }
 
