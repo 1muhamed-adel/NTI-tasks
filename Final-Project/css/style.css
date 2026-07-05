@@ -23,11 +23,11 @@ li{
 .offcanvas,.offcanvas-lg{
     max-width: 89% !important;
 }
-.carousel-indicators button{
+/* .carousel-indicators button{
    width: 5% !important;
    height: 10px !important;
     
-}
+} */
 .carousel-caption {
     top: 50%;
     left: 10%;
@@ -113,13 +113,13 @@ img{
     margin-left: 13px;
 }
 
-.carousel-indicators button{
+/* .carousel-indicators button{
     width:20% !important;
     height: 40% !important;
     border: 2px solid black !important;
     border-radius: 5px;
     
-}
+} */
 
 .animation{
     animation-name: scale;
@@ -156,6 +156,9 @@ img{
     white-space:nowrap !important;
     overflow: hidden;
 }
+.overlay::before{
+    
+}
 @keyframes scale {
     0%{
         transform: scale(1);
@@ -191,9 +194,15 @@ img{
     .w-md-75{
         width: 75% !important;
     }
+    .w-md-49{
+        width: 49% !important;
+    }
     .bg-md-white{
         background-color: white !important;
         padding: 0 !important;
+    }
+    .contact-md-fs{
+        font-size:70px !important;
     }
 }
 @media only screen and (min-width:  992px) {
