@@ -156,9 +156,64 @@ img{
     white-space:nowrap !important;
     overflow: hidden;
 }
-.overlay::before{
+.imgopacity:hover img{
+    filter:opacity(.8);
+}
+#submit:hover{
+    background-color: red !important;
+    border: 0;
+}
+.fs p{
+    font-size: 12px !important;
+}
+.owl-nav{
+    justify-content: space-between;
+    width: 100%;
+    position:absolute;
+    top: 40%;
+    /* transform: translateY(-70%); */
+    display: flex !important;
+    transition: .3s !important;
+    opacity: 0;
+    height: 0;
+    
     
 }
+.slider1:hover .owl-nav{
+    opacity: 1;
+}
+.owl-nav button{
+   height: 60px;
+   width: 20px;
+   margin: 0 !important;
+   background-color: white !important;
+   box-shadow: 0 0 3px 2px lightgray;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    transition: .3s;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+ background-color: black !important;
+}
+.carousel-indicators button:hover {
+    border: 2px solid black !important;
+}
+.descrption-li:nth-child(odd){
+    background-color: rgb(240, 237, 237);
+}
+.fs-h2-medium{
+    font-size: medium !important;
+}
+
+.card-hover:hover .overlay{
+ opacity: 50% !important;
+}
+.overlay{
+    transition: .3s;
+}
+
+
+
 @keyframes scale {
     0%{
         transform: scale(1);
@@ -178,6 +233,7 @@ img{
 }
 
 
+
 @media only screen and (min-width: 768px){
     .bg-image{
     height: 30vh;
@@ -188,7 +244,7 @@ img{
     height: 30vh;
     background-position: 50%;
     }
-    .carousel-item img{
+    .h-md-60{
     height: 60vh;
     }
     .w-md-75{
@@ -204,6 +260,19 @@ img{
     .contact-md-fs{
         font-size:70px !important;
     }
+    .fs-md-xs{
+        /* font-size: x-small !important; */
+        width: 200px !important;
+    }
+    .fs-md h3{
+        font-size:38px !important;
+    }
+    .fs-md p{
+        font-size: medium !important;
+    }
+    .fs-h2-medium{
+    font-size: medium !important;
+}
 }
 @media only screen and (min-width:  992px) {
     .navbar{
@@ -218,11 +287,17 @@ img{
        
 
     }
+    .fs-h2-medium{
+    font-size: xx-large !important;
+}
+    
      .li-item a{
     font-size: 100% !important;
     font-weight:normal;
 }
-    
+    .fs p{
+    font-size: 15px !important;
+}
     
     .navbar-brand{
         margin-left: 80px;
@@ -262,7 +337,7 @@ img{
     .bg-image2{
     height: 38vh;
     }
-    .carousel-item img{
+    .h-lg-76{
     height: 76vh;
     }
     .icon{
@@ -291,9 +366,9 @@ img{
    
         
     }
-    .sale-card{
+    /* .sale-card{
         height: 380px !important;
-    }
+    } */
     .font-size{
         font-size: x-large !important;
         
@@ -364,6 +439,7 @@ img{
     left:7% !important;
     font-size: 15rem !important;
     opacity: .1 !important;
+    width: 50%;
     /* left :100% !important; */
 }
 .animation{
