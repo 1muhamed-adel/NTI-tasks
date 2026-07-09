@@ -11,7 +11,7 @@ $(document).ready(function(){
     loop:true,
     autoplay:true,
     nav:true,
-    navText:['<i class="fa-solid fa-arrow-left-long  "></i>','<i class="fa-solid fa-arrow-right"></i>'],
+    // navText:['<i class="fa-solid fa-arrow-left-long  "></i>','<i class="fa-solid fa-arrow-right"></i>'],
     responsive:{
         0:{
             items:2
